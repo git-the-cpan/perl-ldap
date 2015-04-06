@@ -7,7 +7,7 @@ package Net::LDAP::Control::ManageDsaIT;
 use Net::LDAP::Control;
 
 our @ISA = qw(Net::LDAP::Control);
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 use strict;
 
@@ -15,11 +15,13 @@ sub init {
   my($self) = @_;
 
   delete $self->{asn};
-
-  $self->{asn} = {}
-    unless (exists $self->{value});
+  delete $self->{value};
 
   $self;
+}
+
+sub value {
+  undef;
 }
 
 1;

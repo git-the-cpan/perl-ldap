@@ -1,7 +1,7 @@
 
 package Net::LDAP::ASN;
 
-our $VERSION = '0.11';
+our $VERSION = '0.12';
 
 use Convert::ASN1;
 
@@ -281,7 +281,7 @@ $asn->prepare(<<LDAP_ASN) or die $asn->error;
     ExtendedResponse ::= [APPLICATION 24] SEQUENCE {
 	COMPONENTS OF LDAPResult,
 	responseName    [10] LDAPOID OPTIONAL,
-	response        [11] OCTET STRING OPTIONAL }
+	responseValue   [11] OCTET STRING OPTIONAL }
 
     IntermediateResponse ::= [APPLICATION 25] SEQUENCE {
 	responseName    [0] LDAPOID OPTIONAL,

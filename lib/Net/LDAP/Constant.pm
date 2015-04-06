@@ -4,7 +4,7 @@
 
 package Net::LDAP::Constant;
 
-our $VERSION = '0.22';
+our $VERSION = '0.23';
 
 use Exporter qw(import);
 
@@ -578,6 +578,10 @@ B<Net::LDAP::Constant> exports constant subroutines for the following LDAP
 extension OIDs.
 
 =over 4
+
+=item LDAP_NOTICE_OF_DISCONNECTION (1.3.6.1.4.1.1466.20036)
+
+Indicates that the server is about to close the connection due to an error (RFC 4511)
 
 =item LDAP_EXTENSION_START_TLS (1.3.6.1.4.1.1466.20037)
 

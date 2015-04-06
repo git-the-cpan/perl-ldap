@@ -70,6 +70,7 @@ lib/Net/LDAP/Bind.pm
 lib/Net/LDAP/Constant.pm
 lib/Net/LDAP/Control.pm
 lib/Net/LDAP/Control/Assertion.pm
+lib/Net/LDAP/Control/DontUseCopy.pm
 lib/Net/LDAP/Control/EntryChange.pm
 lib/Net/LDAP/Control/ManageDsaIT.pm
 lib/Net/LDAP/Control/MatchedValues.pm
